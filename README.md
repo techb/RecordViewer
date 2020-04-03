@@ -60,7 +60,7 @@ To see the response from User Interface API that the app uses to build the page,
     $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
     $ sudo apt update
     $ sudo apt install docker-ce
-    sudo apt install docker-compose
+    $ sudo apt install docker-compose
     $ git clone <this repo clone url>
     $ cd RecordViewer
     $ docker-compose build && docker-compose up -d
