@@ -64,7 +64,7 @@ To see the response from User Interface API that the app uses to build the page,
     $ docker-compose build && docker-compose up -d
     ```
 
-1. visit `https:<your droplets ip>:8443/`
+1. visit `https://<your droplets ip>:8443/`
     _You will need to 'allow' connection since this uses it's own SSL cert_
 
 ## (Optional) Deploy to Heroku
