@@ -46,6 +46,27 @@ User Interface API supports all custom objects and some standard objects. If you
 
 To see the response from User Interface API that the app uses to build the page, click Show JSON.
 
+### (Optional) Deploy to DigitalOcean
+[DigitalOcean Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
+1. Create droplet
+1. `ssh` into droplet
+1. Run these commands
+
+    ```
+    $ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+    $ sudo apt update
+    $ sudo apt install docker-ce
+    sudo apt install docker-compose
+    $ git clone <this repo clone url>
+    $ docker-compose build && docker-compose up -d
+    ```
+
+1. visit `https:<your droplets ip>:8443/`
+    _You will need to 'allow' connection since this uses it's own SSL cert_
+
 ## (Optional) Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -93,6 +114,4 @@ After creating the Connected App in Salesforce, follow these steps to set the de
     heroku config:set CONSUMER_KEY={key}
     ```
     Substitute `{key}` with the value from the Consumer Key field in the Connected App details.
-
-
 
