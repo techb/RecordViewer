@@ -1,3 +1,6 @@
+# TrailHead User Interface API module
+https://trailhead.salesforce.com/content/learn/modules/user-interface-api?trail_id=force_com_dev_intermediate
+
 # RecordViewer&mdash;Node.js
 This Node.js app shows you how easy it is to use the Salesforce [User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi) to create, read, update, and delete Salesforce records.
 
@@ -10,7 +13,7 @@ Salesforce uses User Interface API to build the Salesforce1 and Lightning Experi
     * Make a note of the OAuth consumer key to enter on the home page of the Record Viewer app.
 1. To allow the app to make cross-domain requests to Salesforce, in the org, choose Setup > CORS.
    1. Click New.
-   1. For Origin URL Pattern, enter `https://localhost:8443`. If you're deploying to heroku, enter `https://*.herokuapp.com` or `https://some-domain.herokuapp.com`. 
+   1. For Origin URL Pattern, enter `https://localhost:8443`. If you're deploying to heroku, enter `https://*.herokuapp.com` or `https://some-domain.herokuapp.com`.
 1. Clone the RecordViewer repository.
 1. Set up [Docker](https://www.docker.com/).
 1. To build and start the servers, run this Docker Compose command.
@@ -32,13 +35,13 @@ done
 ```
 
 ## Use the Record Viewer App
- 
+
 To view a record, click a record in the Recent Items list.
 This list contains recently used items. If you don't see any records, go to your Salesforce org and select a record or two, then return to the Record Viewer app.
- 
-When viewing a record, you can click to Edit, Delete, or Clone the record. 
- 
-To create a record, navigate to the app's home page and select an object from the dropdown. 
+
+When viewing a record, you can click to Edit, Delete, or Clone the record.
+
+To create a record, navigate to the app's home page and select an object from the dropdown.
 User Interface API supports all custom objects and some standard objects. If you select an unsupported object, the app will let you know.
 
 To see the response from User Interface API that the app uses to build the page, click Show JSON.
@@ -90,6 +93,6 @@ After creating the Connected App in Salesforce, follow these steps to set the de
     heroku config:set CONSUMER_KEY={key}
     ```
     Substitute `{key}` with the value from the Consumer Key field in the Connected App details.
- 
 
- 
+
+
