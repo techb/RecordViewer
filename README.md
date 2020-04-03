@@ -62,6 +62,7 @@ To see the response from User Interface API that the app uses to build the page,
     $ sudo apt install docker-ce
     sudo apt install docker-compose
     $ git clone <this repo clone url>
+    $ cd RecordViewer
     $ docker-compose build && docker-compose up -d
     ```
 
